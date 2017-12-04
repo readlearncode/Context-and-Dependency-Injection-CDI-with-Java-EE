@@ -16,14 +16,9 @@ public class BootStrap {
         SeContainer container = SeContainerInitializer.newInstance().initialize();
 
         System.out.println("------------------------------------------------");
-
         Product book = new Product("Book");
-
-        container.select(ProductService.class).get().generateBarcode(book);
-
+        container.select(ProductService.class).get().generateCode(book);
         System.out.println(book.getCode());
-
-
         System.out.println("------------------------------------------------");
 
         container.close();

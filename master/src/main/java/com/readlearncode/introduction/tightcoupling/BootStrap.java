@@ -1,7 +1,4 @@
-package com.readlearncode.qualifiers.combine;
-
-import javax.enterprise.inject.se.SeContainer;
-import javax.enterprise.inject.se.SeContainerInitializer;
+package com.readlearncode.introduction.tightcoupling;
 
 /**
  * Source code github.com/readlearncode
@@ -13,19 +10,12 @@ public class BootStrap {
 
     public static void main(String... args) {
 
-        SeContainer container = SeContainerInitializer.newInstance().initialize();
-
         System.out.println("------------------------------------------------");
-
         Product book = new Product("Book");
-
-        container.select(ProductService.class).get().generateCode(book);
-
+        ProductService productService = new ProductService(new EAN13Barcode());
+        productService.generateCode(book);
         System.out.println(book.getCode());
-
-
         System.out.println("------------------------------------------------");
 
-        container.close();
     }
 }

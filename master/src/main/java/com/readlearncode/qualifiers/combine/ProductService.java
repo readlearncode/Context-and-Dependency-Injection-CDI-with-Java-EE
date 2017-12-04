@@ -15,7 +15,7 @@ public class ProductService {
     @Language(locale = Language.Locale.SPANISH)
     private CodeGenerator codeGenerator;
 
-    public Product generateBarcode(Product product) {
+    public Product generateCode(Product product) {
 
         String barcode = codeGenerator.generateCode();
 

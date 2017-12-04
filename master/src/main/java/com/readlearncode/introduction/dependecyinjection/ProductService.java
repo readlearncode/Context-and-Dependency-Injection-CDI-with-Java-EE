@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.basic;
+package com.readlearncode.introduction.dependecyinjection;
 
 import javax.inject.Inject;
 
@@ -10,21 +10,19 @@ import javax.inject.Inject;
  */
 public class ProductService {
 
+    @Inject
     private CodeGenerator codeGenerator;
 
-    @Inject
-    public ProductService(@EAN13 CodeGenerator codeGenerator){
-        this.codeGenerator = codeGenerator;
-    }
+//    ProductService(CodeGenerator
+//                      codeGenerator){
+//        this.codeGenerator = codeGenerator;
+//    }
 
     public Product generateCode(Product product) {
-
-        String barcode = codeGenerator.generateCode();
-
+        String barcode =
+                codeGenerator.generateCode();
         product.setCode(barcode);
-
         return product;
     }
-
 
 }

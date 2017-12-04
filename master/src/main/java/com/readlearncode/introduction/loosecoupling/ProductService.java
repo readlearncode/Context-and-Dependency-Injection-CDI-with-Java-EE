@@ -1,6 +1,4 @@
-package com.readlearncode.qualifiers.basic;
-
-import javax.inject.Inject;
+package com.readlearncode.introduction.loosecoupling;
 
 /**
  * Source code github.com/readlearncode
@@ -12,19 +10,14 @@ public class ProductService {
 
     private CodeGenerator codeGenerator;
 
-    @Inject
-    public ProductService(@EAN13 CodeGenerator codeGenerator){
+    ProductService(CodeGenerator codeGenerator){
         this.codeGenerator = codeGenerator;
     }
 
     public Product generateCode(Product product) {
-
         String barcode = codeGenerator.generateCode();
-
         product.setCode(barcode);
-
         return product;
     }
-
 
 }
