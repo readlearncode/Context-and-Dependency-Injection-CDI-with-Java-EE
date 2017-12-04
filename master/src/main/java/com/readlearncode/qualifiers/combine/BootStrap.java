@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.Combine;
+package com.readlearncode.qualifiers.combine;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
@@ -17,11 +17,11 @@ public class BootStrap {
 
         System.out.println("------------------------------------------------");
 
-        Book funWithJava = new Book("Fun with Java");
+        Product book = new Product("Book");
 
-        container.select(BookService.class).get().generateBarcode(funWithJava);
+        container.select(ProductService.class).get().generateBarcode(book);
 
-        System.out.println(funWithJava.getBarcode());
+        System.out.println(book.getBarcode());
 
 
         System.out.println("------------------------------------------------");

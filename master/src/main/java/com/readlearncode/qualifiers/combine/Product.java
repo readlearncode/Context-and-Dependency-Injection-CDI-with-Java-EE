@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.basic;
+package com.readlearncode.qualifiers.combine;
 
 /**
  * Source code github.com/readlearncode
@@ -6,18 +6,18 @@ package com.readlearncode.qualifiers.basic;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-public class Book {
+public class Product {
 
     private Integer id;
-    private String title;
-    private String author;
+    private String name;
+    private Double price;
     private String description;
     private String barcode;
 
-    public Book(){}
+    public Product(){}
 
-    public Book(String title) {
-        this.title = title;
+    public Product(String name) {
+        this.name = name;
     }
 
     public String getBarcode() {
@@ -36,20 +36,20 @@ public class Book {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getAuthor() {
-        return author;
+    public Double getPrice() {
+        return price;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public String getDescription() {

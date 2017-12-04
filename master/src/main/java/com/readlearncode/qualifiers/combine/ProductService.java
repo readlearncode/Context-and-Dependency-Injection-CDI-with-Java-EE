@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.Combine;
+package com.readlearncode.qualifiers.combine;
 
 import javax.inject.Inject;
 
@@ -8,20 +8,20 @@ import javax.inject.Inject;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-public class BookService {
+public class ProductService {
 
     @Inject
     @Barcode(type = Barcode.Type.EAN8)
     @Language(locale = Language.Locale.SPANISH)
     private BarcodeGenerator barcodeGenerator;
 
-    public Book generateBarcode(Book book) {
+    public Product generateBarcode(Product product) {
 
         String barcode = barcodeGenerator.generateBarcode();
 
-        book.setBarcode(barcode);
+        product.setBarcode(barcode);
 
-        return book;
+        return product;
     }
 
 

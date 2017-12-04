@@ -8,18 +8,18 @@ import javax.inject.Inject;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-public class BookService {
+public class ProductService {
 
     @Inject @EAN13
     private BarcodeGenerator barcodeGenerator;
 
-    public Book generateBarcode(Book book) {
+    public Product generateBarcode(Product product) {
 
         String barcode = barcodeGenerator.generateBarcode();
 
-        book.setBarcode(barcode);
+        product.setBarcode(barcode);
 
-        return book;
+        return product;
     }
 
 

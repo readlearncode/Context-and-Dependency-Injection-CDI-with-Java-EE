@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.Combine;
+package com.readlearncode.qualifiers.combine;
 
 
 import javax.inject.Qualifier;
