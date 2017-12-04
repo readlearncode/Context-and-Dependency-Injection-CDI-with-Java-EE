@@ -1,4 +1,6 @@
-package com.readlearncode._playzone;
+package com.readlearncode.qualifiers;
+
+import com.readlearncode._playzone.Publisher;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

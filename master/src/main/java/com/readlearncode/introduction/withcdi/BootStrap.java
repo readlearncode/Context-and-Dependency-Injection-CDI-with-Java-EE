@@ -1,4 +1,4 @@
-package com.readlearncode._playzone;
+package com.readlearncode.introduction.withcdi;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
@@ -17,11 +17,13 @@ public class BootStrap {
 
         System.out.println("------------------------------------------------");
 
-        container.select(Publisher.class).get().message();
-
+        container.select(Library.class).get().performLibraryFunction();
 
         System.out.println("------------------------------------------------");
 
         container.close();
+
     }
+
+
 }

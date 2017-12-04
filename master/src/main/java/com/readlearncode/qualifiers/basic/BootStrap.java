@@ -1,4 +1,4 @@
-package com.readlearncode._playzone;
+package com.readlearncode.qualifiers.basic;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
@@ -11,13 +11,17 @@ import javax.enterprise.inject.se.SeContainerInitializer;
  */
 public class BootStrap {
 
-    public static void main(String... args){
+    public static void main(String... args) {
 
         SeContainer container = SeContainerInitializer.newInstance().initialize();
 
         System.out.println("------------------------------------------------");
 
-        container.select(Publisher.class).get().message();
+        Book funWithJava = new Book("Fun with Java");
+
+        container.select(BookService.class).get().generateBarcode(funWithJava);
+
+        System.out.println(funWithJava.getBarcode());
 
 
         System.out.println("------------------------------------------------");
