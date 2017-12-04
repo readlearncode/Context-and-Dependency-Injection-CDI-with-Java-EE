@@ -19,9 +19,9 @@ public class BootStrap {
 
         Product funWithJava = new Product("Product");
 
-        container.select(ProductService.class).get().generateBarcode(funWithJava);
+        container.select(ProductService.class).get().generateCode(funWithJava);
 
-        System.out.println(funWithJava.getBarcode());
+        System.out.println(funWithJava.getCode());
 
 
         System.out.println("------------------------------------------------");

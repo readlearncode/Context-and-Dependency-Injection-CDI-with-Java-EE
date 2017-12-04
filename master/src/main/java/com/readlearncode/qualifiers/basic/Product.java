@@ -12,7 +12,7 @@ public class Product {
     private String name;
     private Double price;
     private String description;
-    private String barcode;
+    private String code;
 
     public Product(){}
 
@@ -20,12 +20,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getBarcode() {
-        return barcode;
+    public String getCode() {
+        return code;
     }
 
-    void setBarcode(String barcode) {
-        this.barcode = barcode;
+    void setCode(String code) {
+        this.code = code;
     }
 
     public Integer getId() {

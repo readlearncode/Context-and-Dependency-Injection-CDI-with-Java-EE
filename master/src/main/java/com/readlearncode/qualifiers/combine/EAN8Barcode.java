@@ -8,9 +8,9 @@ package com.readlearncode.qualifiers.combine;
  */
 @Barcode(type = Barcode.Type.EAN8)
 @Language(locale = Language.Locale.SPANISH)
-public class EAN8Barcode implements BarcodeGenerator {
+public class EAN8Barcode implements CodeGenerator {
     @Override
-    public String generateBarcode() {
+    public String generateCode() {
         return "EAN8: 94184600";
     }
 }

@@ -7,9 +7,9 @@ package com.readlearncode.qualifiers.advanced;
  * @version 1.0
  */
 @Barcode(type = Barcode.Type.EAN13)
-public class EAN13Barcode implements BarcodeGenerator {
+public class EAN13Barcode implements CodeGenerator {
     @Override
-    public String generateBarcode() {
+    public String generateCode() {
         return "EAN13: 9780735200449";
     }
 }

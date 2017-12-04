@@ -7,9 +7,9 @@ package com.readlearncode.qualifiers.combine;
  * @version 1.0
  */
 @Barcode(type = Barcode.Type.EAN5)
-public class EAN5Barcode implements BarcodeGenerator {
+public class EAN5Barcode implements CodeGenerator {
     @Override
-    public String generateBarcode() {
+    public String generateCode() {
         return "EAN5: 9791234567896";
     }
 }

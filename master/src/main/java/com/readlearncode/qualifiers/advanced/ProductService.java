@@ -11,13 +11,13 @@ import javax.inject.Inject;
 public class ProductService {
 
     @Inject @Barcode(type = Barcode.Type.EAN8)
-    private BarcodeGenerator barcodeGenerator;
+    private CodeGenerator codeGenerator;
 
-    public Product generateBarcode(Product product) {
+    public Product generateCode(Product product) {
 
-        String barcode = barcodeGenerator.generateBarcode();
+        String barcode = codeGenerator.generateCode();
 
-        product.setBarcode(barcode);
+        product.setCode(barcode);
 
         return product;
     }

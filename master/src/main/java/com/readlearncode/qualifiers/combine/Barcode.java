@@ -20,7 +20,7 @@ public @interface Barcode {
 
     Type type();
 
-    public enum Type{
+    enum Type{
         EAN5, EAN8, EAN13
     }
 }

@@ -21,7 +21,7 @@ public class BootStrap {
 
         container.select(ProductService.class).get().generateBarcode(book);
 
-        System.out.println(book.getBarcode());
+        System.out.println(book.getCode());
 
 
         System.out.println("------------------------------------------------");

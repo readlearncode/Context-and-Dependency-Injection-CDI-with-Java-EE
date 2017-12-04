@@ -7,9 +7,9 @@ package com.readlearncode.qualifiers.basic;
  * @version 1.0
  */
 @EAN8
-public class EAN8Barcode implements BarcodeGenerator {
+public class EAN8Barcode implements CodeGenerator {
     @Override
-    public String generateBarcode() {
+    public String generateCode() {
         return "EAN8: 94184600";
     }
 }

@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.advanced;
+package com.readlearncode.qualifiers.basic;
 
 /**
  * Source code github.com/readlearncode
@@ -6,7 +6,7 @@ package com.readlearncode.qualifiers.advanced;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-public interface BarcodeGenerator {
+public interface CodeGenerator {
 
-    String generateBarcode();
+    String generateCode();
 }
