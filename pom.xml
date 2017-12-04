@@ -22,6 +22,7 @@
         <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
         <maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
+        <version.log4j>2.8.2</version.log4j>
     </properties>
 
     <dependencies>
@@ -34,6 +35,11 @@
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se-core</artifactId>
             <version>${weld-se-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${version.log4j}</version>
         </dependency>
     </dependencies>
 
