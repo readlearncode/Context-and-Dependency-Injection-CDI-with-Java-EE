@@ -16,5 +16,4 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({ElementType.TYPE, ElementType.FIELD})
 @Retention(RUNTIME)
 @Qualifier
-public @interface EAN5 {
-}
+public @interface EAN5 {}
