@@ -23,4 +23,5 @@ public @interface Barcode {
     enum Type{
         EAN5, EAN8, EAN13
     }
+
 }

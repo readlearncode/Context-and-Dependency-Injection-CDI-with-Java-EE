@@ -6,10 +6,11 @@ package com.readlearncode.qualifiers.combine;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@Barcode(type = Barcode.Type.EAN13)
-public class EAN13Barcode implements CodeGenerator {
+@Barcode(type = Barcode.Type.EAN8)
+@Language(locale = Language.Locale.ENGLISH)
+public class EAN8BarcodeEN implements CodeGenerator {
     @Override
     public String generateCode() {
-        return "EAN13: 9780735200449";
+        return "EAN8: 94184600";
     }
 }
