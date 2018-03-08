@@ -1,6 +1,5 @@
 package com.readlearncode.loosecoupling;
 
-
 /**
  * Source code github.com/readlearncode
  *
