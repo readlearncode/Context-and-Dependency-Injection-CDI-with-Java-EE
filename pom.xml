@@ -12,6 +12,9 @@
 
     <modules>
         <module>master</module>
+        <module>01_01_start</module>
+        <module>01_02_start</module>
+        <module>01_02_end</module>
     </modules>
 
     <packaging>pom</packaging>
