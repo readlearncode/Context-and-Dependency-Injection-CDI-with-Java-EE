@@ -15,6 +15,8 @@
         <module>01_01_start</module>
         <module>01_02_start</module>
         <module>01_02_end</module>
+        <module>03_01_start</module>
+        <module>03_01_end</module>
     </modules>
 
     <packaging>pom</packaging>
