@@ -10,11 +10,8 @@ import javax.inject.Inject;
  */
 public class ProductService {
 
-    @Inject @EAN13
-    private CodeGenerator codeGenerator;
-
     @Inject @EAN5
-    private CodeGenerator EAN5CodeGenerator;
+    private CodeGenerator codeGenerator;
 
     @Inject
     public ProductService(@EAN13 CodeGenerator codeGenerator){
