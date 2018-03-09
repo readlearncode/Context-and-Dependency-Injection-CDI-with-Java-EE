@@ -7,6 +7,5 @@ package com.readlearncode;
  * @version 1.0
  */
 public interface CodeGenerator {
-
     String generateCode();
 }

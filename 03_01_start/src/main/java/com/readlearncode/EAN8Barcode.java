@@ -6,7 +6,6 @@ package com.readlearncode;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-
 public class EAN8Barcode implements CodeGenerator {
     @Override
     public String generateCode() {
