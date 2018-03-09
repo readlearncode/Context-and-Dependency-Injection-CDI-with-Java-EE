@@ -17,6 +17,7 @@
         <module>01_02_end</module>
         <module>03_01_start</module>
         <module>03_01_end</module>
+        <module>03_02_start</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -28,9 +29,15 @@
         <maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
         <version.log4j>2.8.2</version.log4j>
+        <weld-se-shaded.version>3.0.0.Final</weld-se-shaded.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se-shaded</artifactId>
+            <version>${weld-se-shaded.version}</version>
+        </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
