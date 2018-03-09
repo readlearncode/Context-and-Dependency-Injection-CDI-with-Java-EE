@@ -1,6 +1,5 @@
 package com.readlearncode.introduction.dependecyinjection;
 
-
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
 
