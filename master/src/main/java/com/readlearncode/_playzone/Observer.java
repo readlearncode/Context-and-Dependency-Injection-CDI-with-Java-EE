@@ -10,7 +10,6 @@ import javax.enterprise.event.ObservesAsync;
  */
 public class Observer {
 
-
     public void see(@ObservesAsync String message){
         System.out.println(message);
     }

@@ -16,13 +16,9 @@ public class ProductService {
     private CodeGenerator codeGenerator;
 
     public Product generateCode(Product product) {
-
         String barcode = codeGenerator.generateCode();
-
         product.setCode(barcode);
-
         return product;
     }
-
 
 }
