@@ -1,4 +1,5 @@
-package com.readlearncode.qualifiers.combine;
+package com.readlearncode;
+
 
 import javax.inject.Qualifier;
 import java.lang.annotation.ElementType;
@@ -16,18 +17,11 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({ElementType.TYPE, ElementType.FIELD})
 @Retention(RUNTIME)
 @Qualifier
-public @interface Barcode {
+public @interface Language {
 
-    Type type();
+    Locale locale();
 
-    enum Type {
-        EAN5, EAN8, EAN13
-    }
-
-    Language.Locale locale();
-
-    enum Locale {
+     enum Locale {
         ENGLISH, FRENCH, SPANISH
     }
-
 }

@@ -1,4 +1,4 @@
-package com.readlearncode.qualifiers.combine;
+package com.readlearncode;
 
 import javax.inject.Qualifier;
 import java.lang.annotation.ElementType;
@@ -24,10 +24,10 @@ public @interface Barcode {
         EAN5, EAN8, EAN13
     }
 
-    Language.Locale locale();
-
-    enum Locale {
-        ENGLISH, FRENCH, SPANISH
-    }
+//    Language.Locale locale();
+//
+//    enum Locale {
+//        ENGLISH, FRENCH, SPANISH
+//    }
 
 }
