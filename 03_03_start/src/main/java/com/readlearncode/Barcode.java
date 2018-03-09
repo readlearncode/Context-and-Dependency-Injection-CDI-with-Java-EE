@@ -24,10 +24,4 @@ public @interface Barcode {
         EAN5, EAN8, EAN13
     }
 
-//    Language.Locale locale();
-//
-//    enum Locale {
-//        ENGLISH, FRENCH, SPANISH
-//    }
-
 }
