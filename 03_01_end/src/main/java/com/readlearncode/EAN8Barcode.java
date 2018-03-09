@@ -1,4 +1,4 @@
-package com.readlearncode.basic;
+package com.readlearncode;
 
 /**
  * Source code github.com/readlearncode
@@ -6,10 +6,10 @@ package com.readlearncode.basic;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-
-public class EAN5Barcode implements CodeGenerator {
+@EAN8
+public class EAN8Barcode implements CodeGenerator {
     @Override
     public String generateCode() {
-        return "EAN5: 9791234567896";
+        return "EAN8: 94184600";
     }
 }

@@ -1,4 +1,4 @@
-package com.readlearncode.basic;
+package com.readlearncode;
 
 import javax.inject.Qualifier;
 import java.lang.annotation.ElementType;
@@ -16,4 +16,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({ElementType.TYPE, ElementType.FIELD})
 @Retention(RUNTIME)
 @Qualifier
-public @interface EAN5 {}
+public @interface EAN8 {
+}
