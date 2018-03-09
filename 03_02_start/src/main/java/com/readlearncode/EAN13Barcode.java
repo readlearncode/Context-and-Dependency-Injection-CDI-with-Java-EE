@@ -6,7 +6,6 @@ package com.readlearncode;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@Barcode(type = Barcode.Type.EAN13)
 public class EAN13Barcode implements CodeGenerator {
     @Override
     public String generateCode() {
