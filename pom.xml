@@ -23,6 +23,9 @@
         <module>03_03_end</module>
         <module>03_05_end</module>
         <module>04_01_start</module>
+        <module>08_02_start</module>
+        <module>05_02_start</module>
+        <module>05_02_end</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -61,7 +64,7 @@
     </dependencies>
 
     <build>
-        <finalName>bean-validation-with-java-ee</finalName>
+        <finalName>context-and-dependency-injection-cdi-with-java</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
