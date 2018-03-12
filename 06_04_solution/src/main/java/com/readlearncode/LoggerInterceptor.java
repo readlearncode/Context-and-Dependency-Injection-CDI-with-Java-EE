@@ -1,7 +1,6 @@
 package com.readlearncode;
 
 import javax.annotation.Priority;
-import javax.interceptor.AroundConstruct;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
@@ -13,8 +12,8 @@ import java.util.stream.Stream;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@Interceptor
 @Logged
+@Interceptor
 @Priority(Interceptor.Priority.APPLICATION + 100)
 public class LoggerInterceptor {
 
@@ -26,15 +25,6 @@ public class LoggerInterceptor {
                 .map(Object::toString)
                 .forEach(System.out::println);
         return ic.proceed();
-    }
-
-    @AroundConstruct
-    private Object doClassLogging(InvocationContext ic) throws Exception {
-        long start = System.currentTimeMillis();
-        Object rtn = ic.proceed();
-        long end = System.currentTimeMillis();
-        System.out.println("Construction time: " + (end - start));
-        return rtn;
     }
 
 }

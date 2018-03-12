@@ -16,6 +16,7 @@ public class BootStrap {
         SeContainer container = SeContainerInitializer
                 .newInstance()
                 .enableInterceptors(LoggerInterceptor.class)
+                .enableInterceptors(TimerInterceptor.class)
                 .initialize();
 
         System.out.println("------------------------------------------------");
