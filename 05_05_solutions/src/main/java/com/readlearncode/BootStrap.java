@@ -2,10 +2,9 @@ package com.readlearncode;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
+import java.util.concurrent.TimeUnit;
 
-import static com.readlearncode.LogEvent.LEVEL.ERROR;
-import static com.readlearncode.LogEvent.LEVEL.SEVERE;
-import static com.readlearncode.LogEvent.LEVEL.WARN;
+import static com.readlearncode.LogEvent.LEVEL.*;
 
 /**
  * Source code github.com/readlearncode
@@ -23,6 +22,7 @@ public class BootStrap {
         container.select(LogObserver.class).get().logEvent(new LogEvent(WARN, "Nothing serious has happened"));
         container.select(LogObserver.class).get().logEvent(new LogEvent(SEVERE, "Run for the hills. It's all going down!!!"));
         container.select(LogObserver.class).get().logEvent(new LogEvent(ERROR, "Opps an error occurred"));
+        TimeUnit.SECONDS.sleep(1);
         System.out.println("------------------------------------------------");
 
         container.close();
