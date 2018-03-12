@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Welcome Page</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+        Name: <h:outputText value="#{user.name}"/>
+    <br/>
+
+
+    <h:form id="create">
+
+        <h:panelGrid columnClasses="label,required" columns="1">
+
+            <h:outputLabel for="name" value="name:"/>
+            <h:panelGroup>
+                <h:inputText id="name" value="#{user.name}"/>
+            </h:panelGroup>
+            <h:outputText/>
+
+        </h:panelGrid>
+
+
+        <div class="buttons">
+            <h:commandLink value="Save" action='#{user.update}' styleClass="btn btn-primary">
+            </h:commandLink>
+        </div>
+
+    </h:form>
+
+
+
+
+
+
+</body>
+</html>
