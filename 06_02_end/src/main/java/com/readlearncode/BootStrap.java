@@ -15,7 +15,6 @@ public class BootStrap {
 
         SeContainer container = SeContainerInitializer
                 .newInstance()
-                .addBeanClasses(Customer.class)
                 .enableInterceptors(LoggerInterceptor.class)
                 .initialize();
 
