@@ -17,7 +17,8 @@ public class BootStrap {
 
         System.out.println("------------------------------------------------");
 
-        container.select(RandomNumberService.class).get().print();
+//        container.select(RandomNumberService.class).get().print();
+        container.select(CarService.class).get().print();
 
         System.out.println("------------------------------------------------");
 

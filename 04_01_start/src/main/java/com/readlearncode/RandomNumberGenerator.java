@@ -1,5 +1,6 @@
 package com.readlearncode;
 
+import javax.enterprise.inject.Any;
 import javax.ws.rs.Produces;
 import java.util.ArrayList;
 import java.util.Random;
@@ -14,7 +15,7 @@ public class RandomNumberGenerator {
 
     private Random ran = new Random();
 
-    @Produces
+    @Produces @Any
     private ArrayList<Integer> get() {
         return new ArrayList<Integer>() {{
             add(ran.nextInt(100));

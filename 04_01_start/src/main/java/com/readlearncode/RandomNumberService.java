@@ -1,5 +1,6 @@
 package com.readlearncode;
 
+import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
 import java.util.ArrayList;
 
@@ -12,10 +13,10 @@ import java.util.ArrayList;
 public class RandomNumberService {
 
     @Inject
-    private ArrayList<Integer> randomNumber;
+    private Instance<ArrayList<Integer>> randomNumber;
 
     public void print(){
-        System.out.println(randomNumber);
+        System.out.println(randomNumber.get());
     }
 
 }
