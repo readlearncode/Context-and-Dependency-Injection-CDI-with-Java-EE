@@ -31,6 +31,9 @@
         <module>05_05_solutions</module>
         <module>06_02_start</module>
         <module>06_02_end</module>
+        <module>06_04_solution</module>
+        <module>07_02_start</module>
+        <module>07_02_end</module>
     </modules>
 
     <packaging>pom</packaging>
