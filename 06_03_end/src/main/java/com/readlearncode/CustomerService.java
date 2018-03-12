@@ -1,5 +1,7 @@
 package com.readlearncode;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Source code github.com/readlearncode
  *
@@ -10,7 +12,7 @@ package com.readlearncode;
 public class CustomerService {
 
     public CustomerService() throws InterruptedException {
-        Thread.sleep(1000);
+        TimeUnit.SECONDS.sleep(1);
     }
 
     public void suspendCustomerAccount(String customerName, String reason){

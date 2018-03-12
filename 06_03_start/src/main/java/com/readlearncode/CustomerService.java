@@ -9,8 +9,8 @@ package com.readlearncode;
 @Logged
 public class CustomerService {
 
-    public CustomerService() throws InterruptedException {
-        Thread.sleep(1000);
+    public CustomerService(){
+
     }
 
     public void suspendCustomerAccount(String customerName, String reason){
