@@ -12,9 +12,17 @@ public class PriceChangeEvent {
     private float price;
     private float priceChange;
 
-    public PriceChangeEvent(float price, float priceChange, String stock) {
+    public PriceChangeEvent(String stock, float price, float priceChange) {
+        this.stock = stock;
         this.price = price;
         this.priceChange = priceChange;
+    }
+
+    public String getStock() {
+        return stock;
+    }
+
+    public void setStock(String stock) {
         this.stock = stock;
     }
 
@@ -24,14 +32,6 @@ public class PriceChangeEvent {
 
     public void setPrice(float price) {
         this.price = price;
-    }
-
-    public String getStock() {
-        return stock;
-    }
-
-    public void setStock(String stock) {
-        this.stock = stock;
     }
 
     public float getPriceChange() {

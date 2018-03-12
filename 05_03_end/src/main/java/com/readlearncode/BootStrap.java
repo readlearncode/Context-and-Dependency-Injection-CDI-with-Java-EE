@@ -14,23 +14,19 @@ public class BootStrap {
 
     public static void main(String... args) throws InterruptedException {
 
-        SeContainer container = SeContainerInitializer.newInstance().initialize();
+        SeContainer seContainer = SeContainerInitializer.newInstance().initialize();
 
         System.out.println("------------------------------------------------");
-        container.select(StockObserver.class).get().priceChange(new PriceChangeEvent(100f, 8f, "Big Burger Corp"));
+        seContainer.select(StockObserver.class).get().priceChange(new PriceChangeEvent("Big Burger Corp", 100f, 8f ));
         TimeUnit.SECONDS.sleep(1);
-        container.select(StockObserver.class).get().priceChange(new PriceChangeEvent(100f, -5f, "Banko Corp"));
+        seContainer.select(StockObserver.class).get().priceChange(new PriceChangeEvent("Banko Corp",150f, -7f));
         TimeUnit.SECONDS.sleep(1);
-        container.select(StockObserver.class).get().priceChange(new PriceChangeEvent(100f, -15f, "Food n' Stuff Corp"));
+        seContainer.select(StockObserver.class).get().priceChange(new PriceChangeEvent("Food n' Stuff Corp",250f, -100f));
         TimeUnit.SECONDS.sleep(1);
-        container.select(StockObserver.class).get().priceChange(new PriceChangeEvent(100f, 0f, "Steal Corp"));
-        TimeUnit.SECONDS.sleep(1);
-        container.select(StockObserver.class).get().priceChange(new PriceChangeEvent(100f, -20f, "Steal Corp"));
-        TimeUnit.SECONDS.sleep(1);
-        container.select(StockObserver.class).get().priceChange(new PriceChangeEvent(100f, 30f, "Steal Corp"));
+        seContainer.select(StockObserver.class).get().priceChange(new PriceChangeEvent("Steal Corp", 200f, -50f));
         TimeUnit.SECONDS.sleep(1);
         System.out.println("------------------------------------------------");
 
-        container.close();
+        seContainer.close();
     }
 }
