@@ -19,7 +19,6 @@ public class TimerInterceptor {
     @AroundInvoke
     private Object doMethodLogging(InvocationContext ic) throws Exception {
         long start = System.currentTimeMillis();
-        System.out.println("Start time: " + start);
         Object rtn = ic.proceed();
         long end = System.currentTimeMillis();
         System.out.println("Execution time: " + (end - start));

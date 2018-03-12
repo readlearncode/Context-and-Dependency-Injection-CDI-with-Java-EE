@@ -1,6 +1,5 @@
 package com.readlearncode;
 
-import javax.interceptor.ExcludeClassInterceptors;
 import java.util.Random;
 
 /**
@@ -10,7 +9,6 @@ import java.util.Random;
  * @version 1.0
  */
 @Logged
-@Timed
 public class CustomerService {
 
     public CustomerService() {
@@ -18,12 +16,12 @@ public class CustomerService {
 
     public void suspendCustomerAccount(String customerName, String reason) {
         // Perform logic that suspends the customer's account
-        simulateWork();
     }
 
-    @ExcludeClassInterceptors
+    @Timed
     public void internalAccountAudit(String customerName) {
         // perform internal audit logic
+        simulateWork();
     }
 
     private void simulateWork() {
