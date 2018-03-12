@@ -8,7 +8,7 @@ package com.readlearncode;
  */
 public class LogEvent {
 
-    enum LEVEL {SERVER, ERROR, WARN}
+    enum LEVEL {SEVERE, ERROR, WARN}
 
     private LEVEL level;
     private String message;
