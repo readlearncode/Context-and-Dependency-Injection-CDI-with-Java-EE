@@ -1,4 +1,4 @@
-package com.readlearncode.alternatives;
+package com.readlearncode;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
@@ -17,7 +17,6 @@ public class BootStrap {
                 .newInstance()
                 .disableDiscovery()
                 .addPackages(Webservice.class)
-                .selectAlternatives(WebserviceEndpointTest.class)
                 .initialize();
 
         System.out.println("------------------------------------------------");

@@ -1,4 +1,4 @@
-package com.readlearncode.alternatives;
+package com.readlearncode;
 
 import java.util.List;
 

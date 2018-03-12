@@ -1,4 +1,4 @@
-package com.readlearncode.veto;
+package com.readlearncode;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

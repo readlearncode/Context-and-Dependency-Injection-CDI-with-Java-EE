@@ -1,6 +1,5 @@
-package com.readlearncode.alternatives;
+package com.readlearncode;
 
-import javax.enterprise.inject.Alternative;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,14 +9,13 @@ import java.util.List;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-@Alternative
-public class WebserviceEndpointTest implements Webservice {
+public class WebserviceEndpoint implements Webservice {
 
     public List<String> getRemoteData() {
         return new ArrayList<String>() {{
-            add("Tyler");
-            add("Rose");
-            add("Jonnie");
+            add("John");
+            add("Mary");
+            add("Lynn");
         }};
     }
 

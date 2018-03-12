@@ -1,4 +1,4 @@
-package com.readlearncode.veto;
+package com.readlearncode;
 
 import javax.enterprise.inject.Vetoed;
 
