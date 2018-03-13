@@ -9,10 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>08_02_start</artifactId>
+    <artifactId>09_02_start</artifactId>
+
     <packaging>war</packaging>
     <build>
-        <finalName>08_02_start</finalName>
+        <finalName>09_02_start</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
