@@ -29,7 +29,4 @@ public class User {
         this.name = name;
     }
 
-    public Object update() {
-        return "search?faces-redirect=true";
-    }
 }

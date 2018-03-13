@@ -6,35 +6,7 @@
     <title>Welcome Page</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-        Name: <h:outputText value="#{user.name}"/>
+    <h1>Welcome</h1>Name: <h:outputText value="#{user.name}"/>
     <br/>
-
-
-    <h:form id="create">
-
-        <h:panelGrid columnClasses="label,required" columns="1">
-
-            <h:outputLabel for="name" value="name:"/>
-            <h:panelGroup>
-                <h:inputText id="name" value="#{user.name}"/>
-            </h:panelGroup>
-            <h:outputText/>
-
-        </h:panelGrid>
-
-
-        <div class="buttons">
-            <h:commandLink value="Save" action='#{user.update}' styleClass="btn btn-primary">
-            </h:commandLink>
-        </div>
-
-    </h:form>
-
-
-
-
-
-
 </body>
 </html>
