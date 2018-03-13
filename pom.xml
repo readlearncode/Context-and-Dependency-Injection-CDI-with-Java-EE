@@ -38,6 +38,7 @@
         <module>07_02_end</module>
         <module>07_01_start</module>
         <module>07_01_end</module>
+        <module>08_01_start</module>
     </modules>
 
     <packaging>pom</packaging>
