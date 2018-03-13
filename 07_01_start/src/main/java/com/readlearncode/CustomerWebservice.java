@@ -9,7 +9,7 @@ import java.util.List;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
-public class WebserviceEndpoint implements Webservice {
+public class CustomerWebservice implements Webservice {
 
     public List<String> getRemoteData() {
         return new ArrayList<String>() {{
