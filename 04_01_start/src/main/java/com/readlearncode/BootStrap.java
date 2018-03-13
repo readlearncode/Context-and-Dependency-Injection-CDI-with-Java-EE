@@ -13,12 +13,14 @@ public class BootStrap {
 
     public static void main(String... args) {
 
-        SeContainer container = SeContainerInitializer.newInstance().initialize();
+        SeContainer container = SeContainerInitializer
+                .newInstance()
+                .initialize();
 
         System.out.println("------------------------------------------------");
 
-//        container.select(RandomNumberService.class).get().print();
-        container.select(CarService.class).get().print();
+        container.select(RandomNumberService.class).get().print();
+        //container.select(CarService.class).get().print();
 
         System.out.println("------------------------------------------------");
 

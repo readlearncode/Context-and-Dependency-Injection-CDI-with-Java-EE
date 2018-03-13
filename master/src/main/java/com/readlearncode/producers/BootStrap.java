@@ -1,6 +1,5 @@
 package com.readlearncode.producers;
 
-import com.readlearncode._playzone.Publisher;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
