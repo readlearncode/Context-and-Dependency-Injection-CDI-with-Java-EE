@@ -4,11 +4,7 @@
        version="2.0"
        bean-discovery-mode="all">
 
-    <alternatives>
-        <class>
-            com.readlearncode.CustomerWebserviceTest
-        </class>
-    </alternatives>
+
 
 </beans>
 
