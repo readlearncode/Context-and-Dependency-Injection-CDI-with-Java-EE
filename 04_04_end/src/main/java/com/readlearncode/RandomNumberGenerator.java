@@ -1,5 +1,6 @@
 package com.readlearncode;
 
+import javax.enterprise.inject.Disposes;
 import javax.enterprise.inject.Produces;
 import java.util.ArrayList;
 import java.util.Random;
@@ -24,5 +25,8 @@ public class RandomNumberGenerator {
         }};
     }
 
+    public void clearArray(@Disposes ArrayList<Integer> numbers){
+        numbers.clear();;
+    }
 
 }
