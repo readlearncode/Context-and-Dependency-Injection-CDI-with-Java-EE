@@ -19,7 +19,10 @@ public class BootStrap {
 
         System.out.println("------------------------------------------------");
 
-        container.select(Tailor.class).get().makeSuit();
+        container.select(RandomNumberService.class).get().print();
+        container.select(RandomNumberService.class).get().print();
+        container.select(RandomNumberService.class).get().print();
+        container.select(RandomNumberService.class).get().print();
 
         System.out.println("------------------------------------------------");
 
