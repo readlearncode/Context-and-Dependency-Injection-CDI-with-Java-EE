@@ -18,4 +18,9 @@ public class LoggerGenerator {
         return Logger.getLogger(clazz.getCanonicalName());
     }
 
+//    @Produces
+//    public Logger produceLogger() {
+//        return Logger.getLogger("GlobalLogger");
+//    }
+
 }
