@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<f:event listener="#{signUp.initConversation}" type="preRenderView"/>
+<h:head>
+    <title>Step 4</title>
+</h:head>
+<h:body>
+    <h:form>
+        <br/>
+        <br/>Name: <h:outputText value="#{signUp.name}"/>
+        <br/>Address: <h:outputText value="#{signUp.address}"/>
+        <br/>Phone: <h:outputText value="#{signUp.phone}"/>
+        <br/>
+        <h:commandLink action="#{signUp.finishConversation}" value="Exit"/>
+    </h:form>
+</h:body>
+</html>
