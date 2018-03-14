@@ -1,6 +1,5 @@
 package com.readlearncode;
 
-import javax.enterprise.inject.New;
 import javax.inject.Inject;
 import java.util.ArrayList;
 
@@ -13,7 +12,6 @@ import java.util.ArrayList;
 public class RandomNumberService {
 
     @Inject
-    @New
     private ArrayList<Integer> randomNumber;
 
     public void print(){
