@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Calculate</title>
+</h:head>
+<h:body>
+    <br/>Enter two numbers to add together.
+    <br/>
+    <h:form>
+
+        <h:panelGrid columns="1">
+
+            <h:outputLabel for="x" value="x:"/>
+            <h:panelGroup>
+                <h:inputText id="x" value="#{calculate.x}"/>
+            </h:panelGroup>
+            <h:outputText/>
+
+
+            <h:outputLabel for="y" value="y:"/>
+            <h:panelGroup>
+                <h:inputText id="y" value="#{calculate.y}"/>
+            </h:panelGroup>
+            <h:outputText/>
+
+        </h:panelGrid>
+
+        <h:commandLink action="#{calculate.calculateResult}" value="Calculate"/>
+    </h:form>
+</h:body>
+</html>
