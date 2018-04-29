@@ -13,6 +13,7 @@
     <modules>
         <module>master</module>
         <module>01_01_start</module>
+        <module>01_01_end</module>
         <module>01_02_start</module>
         <module>01_02_end</module>
         <module>03_01_start</module>
@@ -21,6 +22,7 @@
         <module>03_02_end</module>
         <module>03_03_start</module>
         <module>03_03_end</module>
+        <module>03_05_start</module>
         <module>03_05_end</module>
 
         <module>04_01_start</module>
